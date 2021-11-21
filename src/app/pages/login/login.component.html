@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Angular ReqRes API</h1>
+  <mat-card class="form-container">
+    <h2>Login ReqRes</h2>
+    <h3>User <b>eve.holt@reqres.in</b></h3>
+    <h3>Password <b>cityslicka</b></h3>
+    <form (submit)="login($event)" class="form">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" name="email" matInput required />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input
+          [(ngModel)]="password"
+          name="password"
+          matInput
+          required
+          type="password"
+        />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">LOGIN</button>
+    </form>
+  </mat-card>
+</div>

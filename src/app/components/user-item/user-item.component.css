@@ -1,0 +1,24 @@
+mat-card {
+  min-width: 12rem;
+  min-height: 20rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  mat-card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  mat-card {
+    width: 80%;
+  }
+}

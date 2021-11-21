@@ -1,0 +1,25 @@
+<div>
+  <h1>USERS</h1>
+  <mat-paginator
+    [length]="12"
+    [pageSize]="6"
+    (page)="onPageChange($event)"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+  <main class="cards-container" *ngIf="!loading && users">
+    <app-user-item
+      *ngFor="let user of users"
+      [user]="user"
+      class="user-item"
+    ></app-user-item>
+  </main>
+  <mat-paginator
+    [length]="12"
+    [pageSize]="6"
+    (page)="onPageChange($event)"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</div>
+<mat-spinner *ngIf="loading"></mat-spinner>

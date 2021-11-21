@@ -1,0 +1,11 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-header>
+    <mat-card-title class="name"
+      >{{ user.first_name }} {{ user.last_name }}</mat-card-title
+    >
+  </mat-card-header>
+  <img mat-card-image [src]="user.avatar" />
+  <mat-card-content>
+    <p>{{ user.email }}</p>
+  </mat-card-content>
+</mat-card>

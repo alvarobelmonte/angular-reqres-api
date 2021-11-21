@@ -1,0 +1,29 @@
+.container {
+  background-color: rgb(230, 234, 255);
+  height: 100vh;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  color: rgb(78, 78, 78);
+}
+.form-container {
+  width: 30%;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .form-container {
+    width: 80%;
+  }
+}
